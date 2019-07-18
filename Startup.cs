@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using bugserver.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -37,6 +38,8 @@ namespace bugserver
 
 
       //TODO REGISTER ALL REPOSITORIES!!!!!
+      services.AddTransient<BugRepository>();
+
 
 
 
