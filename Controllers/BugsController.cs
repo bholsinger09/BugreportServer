@@ -54,7 +54,7 @@ namespace bugserver.Controllers
 
     // POST api/values
     [HttpPost]
-    public ActionResult<Bug> Post([FromBody] string value)
+    public ActionResult<Bug> Post([FromBody] Bug value)
     {
       try
       {
